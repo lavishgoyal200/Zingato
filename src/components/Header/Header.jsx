@@ -6,7 +6,7 @@ const Header = () => {
     <div className="header" >
         <div className="header-comp" >
             <h2>Order your favourite food here</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente voluptatibus cum quas fugit nesciunt at nobis incidunt perferendis numquam vitae. Omnis reiciendis a iusto eum nam commodi suscipit dignissimos nobis?</p>
+            <p>Choose from a diverse menu featuring a delectable array of dishes crafted with the finest ingredients and culinary expertise. Our mission is to satisfy your cravings and elevate your dining experience, one delicious meal at a time.</p>
             <button>View menu</button>
             {/* <img src={assets.banner} alt="" /> */}
         </div>

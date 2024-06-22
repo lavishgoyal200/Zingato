@@ -5,11 +5,11 @@ const ExploreMenu = ( {category,setCategory} ) => {
   return (
     <div className="explore-menu" id='explore-menu' >
         <h1>Explore our Menu</h1>
-        <p className="explore-menu-test">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint, molestiae expedita. Sequi architecto repellendus quam iste provident porro dolore inventore vero at ad amet, cumque quibusdam mollitia dicta impedit error.</p>
+        <p className="explore-menu-test">Order your favourite heren, We have a great variety with great offers and Fast delivery </p>
         <div className="explore-menu-list">
             { menu_list.map((item,index)=>{
                return (
-                <div onClick={()=> setCategory(prev=>prev===item.menu_name ? "All" :item.menu_name)}>
+                <div key={item.menu_name} onClick={()=> setCategory(prev=>prev===item.menu_name ? "All" :item.menu_name)}>
                     <img className={category===item.menu_name ? "active":" " } src={item.menu_image} alt="" />
                     <p> {item.menu_name}</p>
                 </div>
