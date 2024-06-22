@@ -17,7 +17,7 @@ const [showLogin,setShowLogin]= useState(false)
       <div className='app'>
         <Navbar setShowLogin={setShowLogin} />
         <Routes>
-          <Route path='/' element={<Home/>} />
+          <Route path='/Zingato' element={<Home/>} />
           <Route path='/cart' element={<Cart/>} />
           <Route path='/order' element={<PlaceOrder/>} />
         </Routes>
