@@ -1,0 +1,18 @@
+{
+    "name": "zingatomain",
+    "version": "1.0.0",
+    "private": true,
+    "workspaces": ["admin", "backend", "zingato"],
+    "scripts": {
+      "build": "npm run build:admin && npm run build:zingato",
+      "build:admin": "cd admin && npm run build",
+      "build:zingato": "cd zingato && npm run build",
+      "dev": "concurrently \"npm run dev:admin\" \"npm run dev:backend\" \"npm run dev:zingato\"",
+      "dev:admin": "cd admin && npm run dev",
+      "dev:backend": "cd backend && npm run server",
+      "dev:zingato": "cd zingato && npm run dev"
+    },
+    "devDependencies": {
+      "concurrently": "^8.2.2"
+    }
+  }
