@@ -2,15 +2,15 @@
     "name": "zingatomain",
     "version": "1.0.0",
     "private": true,
-    "workspaces": ["admin", "backend", "zingato"],
+    "workspaces": ["admin", "backened", "Zingato"],
     "scripts": {
-      "build": "npm run build:admin && npm run build:zingato",
+      "build": "npm run build:admin && npm run build:Zingato",
       "build:admin": "cd admin && npm run build",
-      "build:zingato": "cd zingato && npm run build",
-      "dev": "concurrently \"npm run dev:admin\" \"npm run dev:backend\" \"npm run dev:zingato\"",
+      "build:Zingato": "cd Zingato && npm run build",
+      "dev": "concurrently \"npm run dev:admin\" \"npm run dev:backened\" \"npm run dev:Zingato\"",
       "dev:admin": "cd admin && npm run dev",
-      "dev:backend": "cd backend && npm run server",
-      "dev:zingato": "cd zingato && npm run dev"
+      "dev:backened": "cd backened && npm run server",
+      "dev:Zingato": "cd Zingato && npm run dev"
     },
     "devDependencies": {
       "concurrently": "^8.2.2"
