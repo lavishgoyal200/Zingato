@@ -4,6 +4,7 @@ import { StoreContext } from '../../context/storeContext'
 import FoodItem from '../FoodItem/FoodItem'
 const FoodDisplay = ({category}) => {
     const {food_list}= useContext(StoreContext)
+    //lavish
   return (
     < div className="food-display">
             <h2>Top dishes near you</h2>
