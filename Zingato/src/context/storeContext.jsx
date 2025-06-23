@@ -7,7 +7,7 @@ export const StoreContext = createContext(null)
 export const StoreContextProvider =(props) => {
 
 const [cartItem,setCartItem]= useState({})
-const url = "http://localhost:3000" 
+const url = "https://zingato-nsjf.onrender.com" 
 const [token,setToken] = useState("");
 const  [food_list,setFood_list] = useState([]);
 
