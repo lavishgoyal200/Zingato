@@ -7,6 +7,9 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY?.trim());
 const placeOrder = async (req,res) =>{
 
     const frontend_url = "https://zingato.vercel.app/#"
+    // const frontend_url = "http://localhost:5173/Zingato/#"
+
+
 
     try{
         const newOrder = new orderModel({
